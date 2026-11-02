@@ -1,0 +1,163 @@
+{
+  "version": "0.3.9-web.1",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "runtimeChecksPassed": 205,
+  "totalBytes": 302715910,
+  "largestFileBytes": 20971520,
+  "dataParts": 15,
+  "files": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 621,
+      "sha256": "a2c9a7bc51598d07b927e75ea05d2f63cc9590e3a88861689664053d289dbac4"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 29,
+      "sha256": "2c42b74ddbe7156f615c541c3025b12597db3f8ef59a37970ffcdf712964c591"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part000",
+      "bytes": 20971520,
+      "sha256": "3ae2249b6dbe66043e603f434d004eefdfd718c6c41269a7a040434e4b61d6e0"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part001",
+      "bytes": 20971520,
+      "sha256": "e5235823f4cdc768dd789b1e408646fc943f29719b58377c8a91ae371fcd969b"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part002",
+      "bytes": 20971520,
+      "sha256": "76635f0d9c9a7a912ba432bbb35e2fc6686354dda9733ad2c4fc6a8ceee516c1"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part003",
+      "bytes": 20971520,
+      "sha256": "9de35e3ae54c87979079345ef680ea2d2543d8edac46d7f262145bd1a073c07c"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part004",
+      "bytes": 20971520,
+      "sha256": "d5ba1e44547b6e9866b24349194b44b4fa400d3bdedb1ca1a7ea8354e893d759"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part005",
+      "bytes": 20971520,
+      "sha256": "c55b9d0c0c969ec6c29f78f8ac772c8b4441cdc607ac8e950ce8239dc4a370c1"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part006",
+      "bytes": 20971520,
+      "sha256": "145d98d6d65164495bc7fe6b3aa7418c85f95fbf95172f37618dbb09350dc652"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part007",
+      "bytes": 20971520,
+      "sha256": "1bd9b87dc2982a40a5f14f080c159942706dcc3d33b0ce26f4338d29d840145e"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part008",
+      "bytes": 20971520,
+      "sha256": "5a8ffdca00751da292c831258a467933a7315c039107730a67f93e3ef5cb235b"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part009",
+      "bytes": 20971520,
+      "sha256": "5584eed136a9a860b3dfda2cd307fc1e31ec98c274dffeb5e8cfe4245c9c4ca3"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part010",
+      "bytes": 20971520,
+      "sha256": "f936706cc418a6edf33433c77d6c6bc2d066e01fcad7532daaba4860278f2907"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part011",
+      "bytes": 20971520,
+      "sha256": "066847f4ad5a84e9f734a9b5e9999636fbea033fb6b1f22aad885fe4378e3f40"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part012",
+      "bytes": 20971520,
+      "sha256": "0734a0229c2fb1774a7abc6825091c24876adfedd15804dc2dcdf665d4876931"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part013",
+      "bytes": 20971520,
+      "sha256": "39208bf918307230ceb30a9b57b1fed6a44ad8d6ec707c0afb464cb707fe1ce5"
+    },
+    {
+      "path": "Build/2375d8eb43540ff371c72ebc7d639695.data.unityweb.part014",
+      "bytes": 354396,
+      "sha256": "a105724f5dc0c23508b40c4cb15adffa3824738e53c1a8d7a70e9451d314a6f6"
+    },
+    {
+      "path": "Build/4657e7351c0d4ef1729c5b0244e75624.loader.js",
+      "bytes": 47867,
+      "sha256": "aaf7903a063739bbc54358a3708c6cf7807dc8f4414c256e16b0780d320208ac"
+    },
+    {
+      "path": "Build/9f4653f309d6dcdc70760af7b6b10118.wasm.unityweb",
+      "bytes": 8585310,
+      "sha256": "ede0bea67dc648a1da85e88f8160f8e011b01da1ba3fcc070a374da511e54376"
+    },
+    {
+      "path": "Build/c22fbc762c6967e9f66341f796bb6331.framework.js.unityweb",
+      "bytes": 87795,
+      "sha256": "77faa723fc9715cfd3abc587da206f2436fdb4be298c52480fe738297cd91643"
+    },
+    {
+      "path": "English-Guide.txt",
+      "bytes": 2723,
+      "sha256": "6855a790b84764083a0f50fd3275181a1fbcd583bbda556424850536b3876fe1"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8471,
+      "sha256": "9b83a71ae506774ff3825f360711af73e1074aff84d38d0383ad32630b3bf5f8"
+    },
+    {
+      "path": "locale.js",
+      "bytes": 6459,
+      "sha256": "e91ba8e8d94d4269babdd0b5dfe9cab805ee19d2e3784a0b5eccad3131f50996"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5216,
+      "sha256": "aaffc4cbc3b5befed504255fab76f16f273e1472e5cc459e379cf997930e79c4"
+    },
+    {
+      "path": "TEST-STATUS.txt",
+      "bytes": 724,
+      "sha256": "86429a7aa680d0608ae0e28fc59ff3f90a015dccd48c33bfbdf76a47abaeb3d5"
+    },
+    {
+      "path": "web.css",
+      "bytes": 4698,
+      "sha256": "b4e11dc2ff8213cd415f8c3bed8e5465061d2346aba34f7c1013023f5e30db7a"
+    },
+    {
+      "path": "web.js",
+      "bytes": 8013,
+      "sha256": "c77b559266f9d892c327abf526f361c8b91b1903084d47c50533aed8c632a881"
+    },
+    {
+      "path": "升级说明.md",
+      "bytes": 1375,
+      "sha256": "9ed4a05397a42e4981bb4fbe5d3f675e9c98eb4fc9ca4f5b0217c2a383622e69"
+    },
+    {
+      "path": "测试说明.md",
+      "bytes": 933,
+      "sha256": "4e4e3120a8a817f8582ea0b401427b8b25c58d544fbe7c20d29f3c5464578e4e"
+    }
+  ]
+}

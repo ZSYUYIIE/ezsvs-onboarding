@@ -1,0 +1,34 @@
+EZSVS · Your First Day — Bilingual Web Edition
+
+This folder is a static Unity WebGL game. Staff open one link on a PC or Android tablet. No Unity, APK or EXE installation is needed. The browser still downloads approximately 303 MB of assets on first launch; use Wi-Fi.
+
+Use current Chrome or Edge on PC, and current Chrome on Android. Physical Android tablet verification is still pending; review TEST-STATUS.txt before staff rollout.
+
+DEPLOYMENT
+1. Unzip the package. The repository root must contain index.html, Build/, locale.js, web.js, web.css, .nojekyll and .github/workflows/pages.yml.
+2. Commit all files to your approved GitHub repository on branch main. GitHub Desktop is recommended. Do not enable Git LFS or upload the ZIP as the website.
+3. Settings > Pages > Build and deployment > Source: GitHub Actions.
+4. Actions > Deploy EZSVS training to Pages > Run workflow. Use the URL shown after successful deployment.
+5. Test that URL on an actual staff PC and Android tablet before distribution.
+
+Large data is split into 20 MiB files for normal Git upload. Keep every part, name and path unchanged. The complete game is still downloaded on first launch; the parts are not separate levels.
+
+LANGUAGES
+Choose Chinese or English on the welcome page. For a direct English link append ?lang=en, or ?lang=zh for Chinese. Both languages share progress. Web Menu > Switch Language saves and reloads; select Continue on the title screen afterwards.
+
+CONTROLS
+PC: WASD / click to move, right-drag to look, E to interact or open a door, G to reach the current objective, H for the safety handbook.
+Touch: drag bottom left to move; drag an empty area on the right to look; tap a person or the interaction prompt. Landscape and Balanced graphics are recommended. Fullscreen is available from Web Menu.
+
+PROGRESS
+Progress belongs to this browser and website address. There is no server account, cloud save or supervisor dashboard. Export and import progress from Web Menu when changing devices. Clearing browser data or using private browsing can lose progress. The completion certificate downloads through the browser.
+
+ACCESS
+This package contains no authentication. An ordinary GitHub Pages link may be publicly accessible; a private repository does not automatically make the site private. Use your organization's approved hosting and access arrangements for staff-only content.
+
+LOCAL PREVIEW
+Do not double-click index.html. With Python 3 installed, run from this folder:
+python -m http.server 8080 --bind 127.0.0.1
+Then open http://127.0.0.1:8080/
+
+The course is an induction exercise, not authorization to perform work. Approved site procedures, qualifications, permissions and emergency directions take precedence.

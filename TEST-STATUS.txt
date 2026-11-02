@@ -1,0 +1,7 @@
+EZSVS First-Day Web 0.3.9-web.1
+
+PASS: WebGL build; 205 in-player regression checks, including 9 crowd/escape/rack-collision checks; normal trainee save untouched; no page JavaScript errors; touch-event movement emulation; static resource URL/hash checks.
+Touch movement: 5.22 metres in desktop Chromium touch emulation, not a physical Android tablet.
+Physical Honor/Android hardware is not verified in this web release. No claim of all-device compatibility or performance certification.
+Same browser storage keys and save schema as the previous web edition. Use the same GitHub repository URL to retain local progress.
+Previous web ZIP, Windows game and Android APKs retained. No upload or deployment was performed.
