@@ -31,6 +31,7 @@ const webEnglish={
  '运行异常，请从网页菜单保存进度后重新加载。':'A runtime error occurred. Save progress from the Web Menu, then reload.',
  '正在展开场景与人物… ':'Preparing the scene and characters… ','无法进入：':'Unable to start: ',
  '\n可刷新重试；尚未开始的培训不会计入成绩。':'\nRefresh to retry. Training that has not started does not affect your results.', '重试加载':'Retry Loading',
+ '场景加载中，请稍候…':'Loading the scene, please wait…',
  '切换语言会保存进度并重新加载，随后点击“继续上次培训”。':'Switching language saves progress and reloads. Choose Continue on the title screen.',
 };
 let webLanguage='zh';
