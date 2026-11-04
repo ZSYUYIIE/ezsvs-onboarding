@@ -1,17 +1,17 @@
 EZSVS · Your First Day — Bilingual Web Edition
 
-This folder is a static Unity WebGL game. Staff open one link on a PC or Android tablet. No Unity, APK or EXE installation is needed. The browser still downloads approximately 303 MB of assets on first launch; use Wi-Fi.
+This folder is a static Unity WebGL game. Staff open one link on a PC or Android tablet. No Unity, APK or EXE installation is needed. Main first-entry resources: approximately 85.4 MB, down 71.8% from 302.7 MB. Later-floor characters load when needed; total published resources are approximately 279.9 MB. Use Wi-Fi.
 
 Use current Chrome or Edge on PC, and current Chrome on Android. Physical Android tablet verification is still pending; review TEST-STATUS.txt before staff rollout.
 
 DEPLOYMENT
-1. Unzip the package. The repository root must contain index.html, Build/, locale.js, web.js, web.css, .nojekyll and .github/workflows/pages.yml.
+1. Unzip the package. The repository root must contain index.html, Build/, StreamingAssets/, asset-loader.js, locale.js, web.js, web.css, .nojekyll and .github/workflows/pages.yml.
 2. Commit all files to your approved GitHub repository on branch main. GitHub Desktop is recommended. Do not enable Git LFS or upload the ZIP as the website.
 3. Settings > Pages > Build and deployment > Source: GitHub Actions.
 4. Actions > Deploy EZSVS training to Pages > Run workflow. Use the URL shown after successful deployment.
 5. Test that URL on an actual staff PC and Android tablet before distribution.
 
-Large data is split into 20 MiB files for normal Git upload. Keep every part, name and path unchanged. The complete game is still downloaded on first launch; the parts are not separate levels.
+Large assets use parts up to 4 MiB. Keep every name and path unchanged. Up to three parts download concurrently; transient failures retry automatically. Successfully verified parts are cached in this browser/site and reused after interruption or reload. Later-floor character bundles load as needed. Browser quota, private mode or clearing data may evict this cache; full offline play is not promised. This does not change the GitHub Pages network route to mainland China.
 
 LANGUAGES
 Choose Chinese or English on the welcome page. For a direct English link append ?lang=en, or ?lang=zh for Chinese. Both languages share progress. Web Menu > Switch Language saves and reloads; select Continue on the title screen afterwards.

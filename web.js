@@ -24,29 +24,7 @@ function progress(value,message){$('progress').value=value;$('status').textConte
 async function dataURL(){
  // The packer splits large compressed data into Git-friendly parts, all hosted on the same Pages origin.
  if(!build.parts)return build.data;
- const chunks=[];let bytes=0;for(const part of build.parts){const r=await fetch(part.url);if(!r.ok)throw Error(tr('素材下载失败：')+r.status);const data=await r.arrayBuffer();if(data.byteLength!==part.bytes)throw Error(tr('素材分片不完整，请重试'));chunks.push(data);bytes+=data.byteLength;progress(.72*bytes/build.dataBytes,tr('加载场景素材 ')+Math.round(bytes/1048576)+' / '+Math.round(build.dataBytes/1048576)+' MB');}
- return URL.createObjectURL(new Blob(chunks,{type:'application/octet-stream'}));
-}
-// Scene changes leave the canvas black for 10-30 s with no feedback. Sample the finished frame in the same rAF turn
-// (after the engine's own callback) and show a label while the picture stays black.
-function watchBlank(){
- const gl=instance.Module&&instance.Module.ctx,label=$('scene-loading');if(!gl||!gl.readPixels)return;
- const px=new Uint8Array(4),pts=[[.5,.5],[.25,.3],[.75,.3],[.25,.7],[.75,.7]];let since=0,last=0,hits=0;
- function blank(){
-  const prev=gl.getParameter(gl.READ_FRAMEBUFFER_BINDING),w=gl.drawingBufferWidth,h=gl.drawingBufferHeight;
-  try{gl.bindFramebuffer(gl.READ_FRAMEBUFFER,null);
-   for(const[x,y]of pts){gl.readPixels(Math.floor(w*x),Math.floor(h*y),1,1,gl.RGBA,gl.UNSIGNED_BYTE,px);if(px[0]+px[1]+px[2]>8)return false;}
-   return true;
-  }finally{gl.bindFramebuffer(gl.READ_FRAMEBUFFER,prev);}
- }
- function tick(t){
-  requestAnimationFrame(tick);if(t-last<250)return;last=t;
-  let b=false;try{b=blank();}catch(e){return;}
-  window.ezsvsBlank=b;
-  if(!b){since=0;if(!label.hidden)label.hidden=true;return;}
-  if(!since)since=t;if(t-since>1500&&label.hidden)label.hidden=false;
- }
- requestAnimationFrame(tick);
+ return EZSVSAssets.file({parts:build.parts,bytes:build.dataBytes},(bytes,total)=>progress(.72*bytes/total,tr('加载场景素材 ')+Math.round(bytes/1048576)+' / '+Math.round(total/1048576)+' MB'));
 }
 async function start(){if(starting)return;starting=true;$('launch').disabled=true;$('name').disabled=true;$('quality').disabled=true;$('language').disabled=true;$('loading').hidden=false;$('error').hidden=true;
  try{
@@ -57,7 +35,7 @@ async function start(){if(starting)return;starting=true;$('launch').disabled=tru
   await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=build.loader;s.onload=resolve;s.onerror=()=>reject(Error(tr('引擎加载失败，请检查网络后重试')));document.body.appendChild(s);});
   const maxWidth=ezsvsSettings.lowPower?1440:1920,ratio=Math.max(.65,Math.min(devicePixelRatio||1,ezsvsSettings.lowPower?1:1.25,maxWidth/innerWidth));
   instance=await createUnityInstance(canvas,{dataUrl:data,frameworkUrl:build.framework,codeUrl:build.code,streamingAssetsUrl:'StreamingAssets',companyName:build.company,productName:build.product,productVersion:build.version,devicePixelRatio:ratio,matchWebGLToCanvasSize:true,cacheControl:url=>url.startsWith('blob:')?'no-store':'must-revalidate',showBanner:(m,t)=>{if(t==='error'){ezsvsErrors.push(m);console.error(m);toast(tr('运行异常，请从网页菜单保存进度后重新加载。'));}}},p=>progress(build.parts ? .72+.28*p : p,tr('正在展开场景与人物… ')+Math.round(p*100)+'%'));
-  window.ezsvsInstance=instance;$('welcome').hidden=true;$('toolbar').hidden=false;canvas.focus();if(data.startsWith('blob:'))URL.revokeObjectURL(data);watchBlank();
+  window.ezsvsInstance=instance;$('welcome').hidden=true;$('toolbar').hidden=false;canvas.focus();if(data.startsWith('blob:'))URL.revokeObjectURL(data);
  }catch(e){const reason=typeof e?.message==='string'&&e.message!=='undefined'?e.message:tr('浏览器未能启动三维引擎。请更新 Chrome，选择均衡画质并关闭其他大应用后重试。');$('error').textContent=tr('无法进入：')+reason+tr('\n可刷新重试；尚未开始的培训不会计入成绩。');$('error').hidden=false;$('launch').disabled=false;$('launch').textContent=tr('重试加载');starting=false;$('name').disabled=false;$('quality').disabled=false;$('language').disabled=false;}
 }
 $('launch').onclick=start;if(ezsvsSettings.qa)setTimeout(start,100);

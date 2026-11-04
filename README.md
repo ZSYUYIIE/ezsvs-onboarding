@@ -1,17 +1,17 @@
 # EZSVS · 入职第一天 — GitHub Pages 部署包
 
-这是浏览器直接运行的 Unity 3D 培训游戏，不需要员工安装 EXE、APK 或 Unity。电脑与安卓平板使用同一个网址。首次进入仍需通过网络加载约 303 MB 的人物和场景资源，建议使用 Wi-Fi。请先查看本包“测试说明.md”，安卓实际设备的验证尚未完成。
+这是浏览器直接运行的 Unity 3D 培训游戏，不需要员工安装 EXE、APK 或 Unity。电脑与安卓平板使用同一个网址。首屏主要资源约 302.7 MB → 85.4 MB，减少 71.8%。完整发布资源约 279.9 MB，后续按楼层加载人物。建议使用 Wi-Fi。请先查看本包“测试说明.md”，安卓实际设备的验证尚未完成。
 
 ## 上传同事的操作
 
-1. 解压收到的 ZIP。进入含有 `index.html`、`Build`、`web.js`、`.github` 的那一层文件夹。
+1. 解压收到的 ZIP。进入含有 `index.html`、`Build`、`StreamingAssets`、`asset-loader.js`、`web.js`、`.github` 的那一层文件夹。
 2. 在公司指定的 GitHub 账号中新建空仓库，例如 `ezsvs-onboarding`。确认公司允许这份培训内容公开访问后再启用 Pages。普通 GitHub Pages 网址没有员工登录验证，知道网址的人可能访问；私有仓库不等于私有网页。
 3. 推荐使用 GitHub Desktop：把该文件夹添加为本地仓库、提交全部文件、发布到指定 GitHub 仓库，默认分支使用 `main`。不要启用 Git LFS，不要把整个 ZIP 直接当作网站上传。
 4. 在仓库的 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
 5. 在 **Actions → Deploy EZSVS training to Pages → Run workflow** 运行。出现绿色完成标记后，打开部署结果里的网址。之后更新 `main` 会自动部署。
 6. 把网址发给员工，例如 `https://你的账号.github.io/ezsvs-onboarding/`。部署包全部使用相对路径，仓库名可以更换。
 
-也可用 **Add file → Upload files** 上传解压后的文件和文件夹。必须保留 `Build` 目录层级；确认 `.github/workflows/pages.yml` 和 `.nojekyll` 一并上传。大数据文件已分片，每片 20 MiB；若浏览器上传限制拦住某个文件，请改用 GitHub Desktop。不要重命名、漏传或手动合并分片。
+也可用 **Add file → Upload files** 上传解压后的文件和文件夹。必须保留 `Build` 和 `StreamingAssets` 目录层级；确认 `.github/workflows/pages.yml` 和 `.nojekyll` 一并上传。大数据文件已分片，每片最多 4 MiB；若浏览器上传限制拦住某个文件，请改用 GitHub Desktop。不要重命名、漏传或手动合并分片。
 
 ## 员工怎么玩
 
@@ -53,3 +53,13 @@ python -m http.server 8080 --bind 127.0.0.1
 上传后请至少从一台电脑和实际使用的安卓平板各完成一次开场、交谈、保存及重新进入。东南亚各地访问 GitHub Pages 的速度取决于当地网络。
 
 参考：[GitHub Pages 创建网站](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)、[Pages 使用限制](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)、[Pages 访问控制](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)。
+
+## v0.4.0 下载优化
+
+- 同时最多下载 3 个资源片；临时网络错误自动重试。每片下载后核对 SHA-256。
+- 验证通过的片段保存在当前网站的浏览器缓存中，重开页面时复用；中途中断后，无需重新下载已完成的片段。不是从某个字节位置继续下载。
+- 开场准备李毅、袁雨婷和共享素材；少量门口人员稍后后台准备。前往其他楼层时再准备该层人物，保留原有培训内容。
+- 清理无用模型及不显示的冗余渲染组件；仅为建筑表面法线、粗糙度等贴图降低网页专用分辨率。人物脸部贴图精度保持不变。
+- 浏览器可能因空间不足、清理数据或隐私模式无法保留缓存，此时仍可联网重新加载。缓存不等于完整离线运行。
+
+升级原网站请优先阅读“升级说明.md”。该包改善下载量与重试体验；GitHub Pages 到中国大陆的网络线路仍可能慢，未实测中国大陆员工线路。
