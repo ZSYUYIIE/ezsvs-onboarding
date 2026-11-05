@@ -1,9 +1,28 @@
 'use strict';
 const $=id=>document.getElementById(id),build=window.EZSVS_BUILD,query=new URLSearchParams(location.search);
 const mobile=/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-window.ezsvsSettings={touch:mobile||query.get('touch')==='1',lowPower:mobile,qa:query.get('qa')==='1'&&['localhost','127.0.0.1'].includes(location.hostname),name:'',language:webLanguage};
+window.ezsvsSettings={touch:mobile||query.get('touch')==='1',lowPower:mobile,qa:query.get('qa')==='1'&&['localhost','127.0.0.1'].includes(location.hostname),review:query.get('review')==='1'&&['localhost','127.0.0.1'].includes(location.hostname),name:'',language:webLanguage};
 window.ezsvsErrors=[];window.addEventListener('error',e=>window.ezsvsErrors.push(e.message));window.addEventListener('unhandledrejection',e=>window.ezsvsErrors.push(String(e.reason)));
-let instance,toastTimer,starting=false;
+let instance,toastTimer,starting=false,displayObserver;
+let qualityChoice='auto';try{const saved=localStorage.getItem('ezsvs-display-quality');if(['auto','high','balanced'].includes(saved))qualityChoice=saved;}catch(e){}
+$('quality').value=qualityChoice;$('runtime-quality').value=qualityChoice;
+function renderSize(width,height,dpr,quality){
+ const high=quality==='high',balanced=quality==='balanced';
+ const edge=high?2560:balanced?1600:2160,pixels=high?3686400:balanced?1440000:2592000;
+ const density=Math.max(.5,Math.min(dpr||1,mobile?1.5:high?2:balanced?1:1.5,edge/Math.max(width,height),Math.sqrt(pixels/(width*height))));
+ return {width:Math.max(1,Math.round(width*density)),height:Math.max(1,Math.round(height*density)),density};
+}
+function updateDisplay(){
+ const rect=canvas.getBoundingClientRect();if(rect.width<1||rect.height<1)return;
+ const size=renderSize(rect.width,rect.height,devicePixelRatio,qualityChoice);
+ if(instance?.Module)instance.Module.devicePixelRatio=size.density;
+ if(canvas.width!==size.width)canvas.width=size.width;if(canvas.height!==size.height)canvas.height=size.height;
+ window.ezsvsDisplay={...(window.ezsvsDisplay||{}),cssWidth:rect.width,cssHeight:rect.height,renderWidth:size.width,renderHeight:size.height,density:size.width/rect.width,quality:qualityChoice};
+}
+function chooseQuality(value){qualityChoice=value;$('quality').value=value;$('runtime-quality').value=value;try{localStorage.setItem('ezsvs-display-quality',value);}catch(e){}if(instance)updateDisplay();}
+$('quality').onchange=e=>chooseQuality(e.target.value);
+$('runtime-quality').onchange=e=>{chooseQuality(e.target.value);closeMenu();};
+window.ezsvsRenderSize=renderSize;
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,5000);}
 window.ezsvsDownload=(blob,name)=>{const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);};
 function send(method){if(instance)instance.SendMessage('EZSVSGame',method);}
@@ -30,12 +49,12 @@ async function start(){if(starting)return;starting=true;$('launch').disabled=tru
  try{
   if(location.protocol==='file:')throw Error(tr('请通过本地预览服务或 GitHub Pages 链接打开，不能直接双击 HTML。'));
   const probe=document.createElement('canvas');if(!probe.getContext('webgl2'))throw Error(tr('此浏览器未启用 WebGL 2。请使用最新版 Chrome 或 Edge，并检查硬件加速。'));
-  const q=$('quality').value;ezsvsSettings.lowPower=q==='balanced'||q==='auto'&&mobile;ezsvsSettings.name=$('name').value.trim();
+  const q=$('quality').value;chooseQuality(q);ezsvsSettings.lowPower=mobile||q==='balanced';ezsvsSettings.name=$('name').value.trim();
   progress(.02,tr('准备图形引擎…'));const data=await dataURL();
   await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=build.loader;s.onload=resolve;s.onerror=()=>reject(Error(tr('引擎加载失败，请检查网络后重试')));document.body.appendChild(s);});
-  const maxWidth=ezsvsSettings.lowPower?1440:1920,ratio=Math.max(.65,Math.min(devicePixelRatio||1,ezsvsSettings.lowPower?1:1.25,maxWidth/innerWidth));
-  instance=await createUnityInstance(canvas,{dataUrl:data,frameworkUrl:build.framework,codeUrl:build.code,streamingAssetsUrl:'StreamingAssets',companyName:build.company,productName:build.product,productVersion:build.version,devicePixelRatio:ratio,matchWebGLToCanvasSize:true,cacheControl:url=>url.startsWith('blob:')?'no-store':'must-revalidate',showBanner:(m,t)=>{if(t==='error'){ezsvsErrors.push(m);console.error(m);toast(tr('运行异常，请从网页菜单保存进度后重新加载。'));}}},p=>progress(build.parts ? .72+.28*p : p,tr('正在展开场景与人物… ')+Math.round(p*100)+'%'));
-  window.ezsvsInstance=instance;$('welcome').hidden=true;$('toolbar').hidden=false;canvas.focus();if(data.startsWith('blob:'))URL.revokeObjectURL(data);
+  updateDisplay();
+  instance=await createUnityInstance(canvas,{dataUrl:data,frameworkUrl:build.framework,codeUrl:build.code,streamingAssetsUrl:'StreamingAssets',companyName:build.company,productName:build.product,productVersion:build.version,devicePixelRatio:window.ezsvsDisplay.density,matchWebGLToCanvasSize:true,cacheControl:url=>url.startsWith('blob:')?'no-store':'must-revalidate',showBanner:(m,t)=>{if(t==='error'){ezsvsErrors.push(m);console.error(m);toast(tr('运行异常，请从网页菜单保存进度后重新加载。'));}}},p=>progress(build.parts ? .72+.28*p : p,tr('正在展开场景与人物… ')+Math.round(p*100)+'%'));
+  window.ezsvsInstance=instance;displayObserver=new ResizeObserver(()=>updateDisplay());displayObserver.observe(canvas);window.addEventListener('resize',updateDisplay);document.addEventListener('fullscreenchange',updateDisplay);updateDisplay();$('welcome').hidden=true;$('toolbar').hidden=false;canvas.focus();if(data.startsWith('blob:'))URL.revokeObjectURL(data);
  }catch(e){const reason=typeof e?.message==='string'&&e.message!=='undefined'?e.message:tr('浏览器未能启动三维引擎。请更新 Chrome，选择均衡画质并关闭其他大应用后重试。');$('error').textContent=tr('无法进入：')+reason+tr('\n可刷新重试；尚未开始的培训不会计入成绩。');$('error').hidden=false;$('launch').disabled=false;$('launch').textContent=tr('重试加载');starting=false;$('name').disabled=false;$('quality').disabled=false;$('language').disabled=false;}
 }
 $('launch').onclick=start;if(ezsvsSettings.qa)setTimeout(start,100);
@@ -48,3 +67,4 @@ function changeLanguage(language){
 }
 $('language').onchange=e=>changeLanguage(e.target.value);
 $('switch-language').onclick=()=>changeLanguage(webLanguage==='en'?'zh':'en');
+

@@ -1,11 +1,3 @@
-EZSVS Your First Day 0.4.0-web.1
-
-PASS: Unity WebGL build; 206 in-player regression checks, including course completion/right and wrong choices, navigation, collision, saves, English text coverage and streamed actor availability.
-PASS: real WebGL cold startup, persisted-cache reload (zero additional managed core/bundle download), UI Continue into a deferred later floor, injected HTTP 503 retry.
-PASS: five isolated downloader tests: max-three parallelism and byte order, persisted cache, corrupt-cache repair, interrupted-download reuse, cache-unavailable fallback.
-PASS: 82 prefixed HTTP resource URLs, 74 part hashes, full bundle reassembly hashes; normal trainee save untouched.
-PASS: 800x720 touch-event emulation; movement 3.91 metres. This is desktop Chromium touch emulation, not a physical Android device.
-
-First-entry main resources 85379632 bytes vs prior 302676648 bytes (71.8% lower). Full published resources approximately 279873257 bytes. These are transfer sizes, not measured internet loading times.
-No physical Honor/Android, China-network throughput or all-device certification. Software-WebGL tests report unsupported unused internal debug/copy shaders; tested visible scenes and characters render without missing animation classes or missing references.
-No deployment performed. Original releases and sources retained.
+EZSVS 0.4.2-web.1
+PASS 207 in-player regression checks; phone-style touch/UI/quality changes; six floor transitions/revisits with one room retained and cached reloading; six asset-loader checks; 82 resource URLs and 74 part hashes.
+Desktop hardware-WebGL and Android-style input emulation only; physical Honor device and China network not verified. Original releases retained. No deployment performed.

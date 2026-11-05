@@ -33,6 +33,7 @@ const webEnglish={
  '\n可刷新重试；尚未开始的培训不会计入成绩。':'\nRefresh to retry. Training that has not started does not affect your results.', '重试加载':'Retry Loading',
  '切换语言会保存进度并重新加载，随后点击“继续上次培训”。':'Switching language saves progress and reloads. Choose Continue on the title screen.',
 };
+Object.assign(webEnglish,{'画面清晰度':'Display clarity','自动 · 清晰优先':'Auto · Clear image','高清 · 适合性能较强设备':'High · Faster devices','流畅 · 降低渲染负担':'Smooth · Lower GPU load'});
 let webLanguage='zh';
 try{webLanguage=localStorage.getItem('ezsvs-language')==='en'?'en':'zh';}catch(e){}
 const urlLanguage=new URLSearchParams(location.search).get('lang');

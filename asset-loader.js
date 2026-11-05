@@ -26,6 +26,7 @@ window.EZSVSAssets=(()=>{
   file(spec,(done,total)=>state.progress=done/total).then(url=>{state.url=url;state.progress=1;state.status=1;}).catch(e=>{state.error=String(e.message||e);state.status=-1;});
  }
  function release(name){const s=states.get(name);if(s?.url){URL.revokeObjectURL(s.url);s.url='';}if(!stats.loadedBundles.includes(name))stats.loadedBundles.push(name);}
+ function unload(name){const s=states.get(name);if(s?.url)URL.revokeObjectURL(s.url);states.delete(name);const i=stats.loadedBundles.indexOf(name);if(i>=0)stats.loadedBundles.splice(i,1);(stats.unloadedBundles??=[]).push(name);if(stats.unloadedBundles.length>64)stats.unloadedBundles.shift();}
  function reset(){for(const [name,s] of states)if(s.status<0){if(s.url)URL.revokeObjectURL(s.url);states.delete(name);}}
- return {file,request,status:name=>states.get(name)?.status??0,url:name=>states.get(name)?.url||'',progress:name=>states.get(name)?.progress||0,release,reset,stats};
+ return {file,request,unload,status:name=>states.get(name)?.status??0,url:name=>states.get(name)?.url||'',progress:name=>states.get(name)?.progress||0,release,reset,stats};
 })();
