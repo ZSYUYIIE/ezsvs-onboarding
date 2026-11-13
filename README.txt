@@ -1,0 +1,1 @@
+EZSVS onboarding v0.4.3-web.1. See README.md for the live training URL, full Unity source release, controls and validation. Preserve the complete mobile/ folder and the original deployment URL to retain browser progress.

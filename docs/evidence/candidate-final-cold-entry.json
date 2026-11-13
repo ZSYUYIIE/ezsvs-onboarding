@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "start": 22774.89999999944,
+    "before": {
+      "networkBytes": 79708434,
+      "cacheBytes": 0,
+      "requests": 21,
+      "retries": 0,
+      "corruptions": 0,
+      "active": 0,
+      "maxActive": 3,
+      "loadedBundles": [
+        "cast-shared",
+        "cast-liyi",
+        "cast-yuanyuting"
+      ],
+      "cacheUnavailable": false
+    },
+    "tasks": [
+      {
+        "start": 26590.200000000186,
+        "duration": 811
+      },
+      {
+        "start": 27402.200000000186,
+        "duration": 63
+      }
+    ],
+    "elapsedMs": 4730,
+    "after": {
+      "networkBytes": 199618224,
+      "cacheBytes": 0,
+      "requests": 51,
+      "retries": 0,
+      "corruptions": 0,
+      "active": 0,
+      "maxActive": 3,
+      "loadedBundles": [
+        "cast-shared",
+        "cast-liyi",
+        "cast-faiz",
+        "cast-hua",
+        "cast-yandy",
+        "cast-xiaoman",
+        "cast-jay",
+        "cast-chen",
+        "cast-yang"
+      ],
+      "cacheUnavailable": false,
+      "unloadedBundles": [
+        "cast-yuanyuting"
+      ]
+    },
+    "scene": {
+      "place": "sg1_l2",
+      "path": "spatial-mesh-combine",
+      "readable": 1480,
+      "rooms": 1,
+      "bundles": 10,
+      "width": 1280,
+      "height": 720,
+      "renderers": 1802,
+      "instancedRenderers": 634,
+      "batches": 40,
+      "culled": 2006,
+      "occluded": 586,
+      "lights": 10,
+      "totalLights": 57,
+      "proxyBatches": 0,
+      "renderScale": 1,
+      "allocated": 478425522,
+      "reserved": 499615090
+    }
+  },
+  "scene": {
+    "place": "sg1_l2",
+    "path": "spatial-mesh-combine",
+    "readable": 1480,
+    "rooms": 1,
+    "bundles": 9,
+    "width": 1280,
+    "height": 720,
+    "renderers": 1802,
+    "instancedRenderers": 634,
+    "batches": 40,
+    "culled": 2006,
+    "occluded": 586,
+    "lights": 14,
+    "totalLights": 57,
+    "proxyBatches": 0,
+    "renderScale": 1,
+    "allocated": 441297269,
+    "reserved": 462200549
+  },
+  "build": "desktop",
+  "errors": []
+}

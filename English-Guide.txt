@@ -1,12 +1,5 @@
-EZSVS Your First Day 0.4.2-web.1 — Data Hall Performance
+EZSVS Your First Day v0.4.3-web.1
 
-Replace the complete published files in the original repository, preserving .git, .github/workflows/pages.yml and .nojekyll. Do not mix Build/StreamingAssets files from different versions. Export progress first, deploy main through GitHub Actions, refresh the original URL and choose Continue. No deployment is performed by this package.
+Open https://zsyuyiie.github.io/ezsvs-onboarding/ and choose English. Use WASD/click to move, right-drag to look, E to interact, G for the objective and H for the handbook. Touch users should use landscape orientation, the left movement stick, and right-side look area.
 
-On phones, canvas density is capped at 1.5. UI retains its canvas resolution; the 3D scene uses 75% in Auto, 60% in Smooth and 90% in High. Change Display clarity from Web Menu. Nearby lighting, short hard main shadows, spatial mesh cells on mobile and instancing on desktop, cutout rack doors, conservative solid-wall culling and distant rack proxies reduce work.
-Old floors and unneeded actor bundles are released; verified browser download cache is retained for revisits. Persistent UI textures are protected during cleanup. WASM capacity, Unity allocated memory and browser process totals differ; no promise is made that process memory immediately returns to its earlier value.
-
-Current floors are generated at runtime. This release does not claim baked lightmaps or Unity baked occlusion data. It retains environment fill and a capped local-light budget.
-
-PC: WASD/click to move, right-drag to look, E interact/open doors, G guide, H handbook. Touch: drag lower left to move, right blank area to look, tap people/prompts. Use landscape Chrome/Edge. Language links: ?lang=en or ?lang=zh. Progress is local to this browser/site; export before clearing browser data or changing devices. No cloud progress or supervisor dashboard.
-
-PASS: 207 WebGL course checks, touch/high-DPI layouts, six floor transitions/revisits, six asset-loader tests and static resource integrity. These are desktop-browser tests with Android-style input, not physical Honor phone FPS or mainland-China download measurements.
+Progress is local to this browser; export it before clearing data or moving devices. The same URL and save schema are retained. See README.md for validation, full Unity source download and device-testing limits.

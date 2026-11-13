@@ -1,0 +1,81 @@
+{
+    "passed": true,
+    "unity": "6000.3.22f1",
+    "checks": [
+        {
+            "name": "same-static-obstacle-count",
+            "details": "93",
+            "passed": true
+        },
+        {
+            "name": "circle-clearance-matches-original",
+            "details": "queries=8392 build-ms original=90.85 optimized=7.40",
+            "passed": true
+        },
+        {
+            "name": "segment-clearance-matches-original",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "safe-spawns-match-original",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "wall-sliding-matches-original",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "dynamic-agent-routes-match-original",
+            "details": "routes=4",
+            "passed": true
+        },
+        {
+            "name": "dynamic-agent-checks-are-lazy",
+            "details": "original=119264 optimized=38271",
+            "passed": true
+        },
+        {
+            "name": "already-in-reach-does-no-search",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "sealed-wall-still-blocks-routing",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "visual-cell-never-adds-collision",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "ordinary-mesh-keeps-collision",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "visual-cell-does-not-seal-empty-floor",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "ordinary-solid-still-blocks-floor",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "camera-nearest-hit-overlaps-and-buffer-growth",
+            "details": "comparisons=12",
+            "passed": true
+        },
+        {
+            "name": "camera-does-not-cross-nearest-wall",
+            "details": "",
+            "passed": true
+        }
+    ]
+}

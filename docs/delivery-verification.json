@@ -1,0 +1,21 @@
+{
+  "version": "0.4.3-web.1",
+  "source": {
+    "passed": true,
+    "sourceArchive": "C:\\Users\\drdot\\.codex\\visualizations\\2026\\11\\05\\01a1aab8-58e1-75d3-8816-829dbbe8c451\\onboarding-work\\Deliveries\\EZSVS-Onboarding-Source-v0.4.3-web.1.zip",
+    "bytes": 1645533509,
+    "sha256": "894c8005e1f547dd217851e198d94ebedeaf917407e65ebe580b9ad4bf0b2769",
+    "files": 3080
+  },
+  "web": {
+    "path": "C:\\Users\\drdot\\.codex\\visualizations\\2026\\11\\05\\01a1aab8-58e1-75d3-8816-829dbbe8c451\\onboarding-work\\Deliveries\\Web-Pages-v0.4.3.zip",
+    "bytes": 515116973,
+    "sha256": "a66edc306e521a6b5fdbfd89c28add6e2805ad6386acd6fbd55b3d0109604c6e",
+    "variants": [
+      "desktop",
+      "mobile"
+    ],
+    "zipCrcVerifiedByPackager": true
+  },
+  "deployed": false
+}

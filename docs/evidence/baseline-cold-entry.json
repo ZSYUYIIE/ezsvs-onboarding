@@ -1,0 +1,73 @@
+{
+  "start": 29649.599999999627,
+  "before": {
+    "networkBytes": 77217273,
+    "cacheBytes": 0,
+    "requests": 20,
+    "retries": 0,
+    "corruptions": 0,
+    "active": 0,
+    "maxActive": 3,
+    "loadedBundles": [
+      "cast-shared",
+      "cast-liyi",
+      "cast-yuanyuting"
+    ],
+    "cacheUnavailable": false
+  },
+  "tasks": [
+    {
+      "start": 32997.699999999255,
+      "duration": 2774
+    },
+    {
+      "start": 35773.199999999255,
+      "duration": 217
+    }
+  ],
+  "elapsedMs": 6386.5999999996275,
+  "after": {
+    "networkBytes": 190882229,
+    "cacheBytes": 0,
+    "requests": 50,
+    "retries": 0,
+    "corruptions": 0,
+    "active": 0,
+    "maxActive": 3,
+    "loadedBundles": [
+      "cast-shared",
+      "cast-liyi",
+      "cast-faiz",
+      "cast-hua",
+      "cast-yandy",
+      "cast-xiaoman",
+      "cast-jay",
+      "cast-chen",
+      "cast-yang"
+    ],
+    "cacheUnavailable": false,
+    "unloadedBundles": [
+      "cast-yuanyuting"
+    ]
+  },
+  "scene": {
+    "place": "sg1_l2",
+    "path": "gpu-instances",
+    "readable": 1480,
+    "rooms": 1,
+    "bundles": 10,
+    "width": 1280,
+    "height": 720,
+    "renderers": 1802,
+    "instancedRenderers": 544,
+    "batches": 0,
+    "culled": 2632,
+    "occluded": 0,
+    "lights": 10,
+    "totalLights": 57,
+    "proxyBatches": 0,
+    "renderScale": 1,
+    "allocated": 462147574,
+    "reserved": 482171891
+  }
+}

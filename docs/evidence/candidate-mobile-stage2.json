@@ -1,0 +1,38 @@
+{
+  "scene": {
+    "place": "sg1_l2",
+    "path": "spatial-mesh-combine",
+    "readable": 1480,
+    "rooms": 1,
+    "bundles": 9,
+    "width": 1350,
+    "height": 510,
+    "renderers": 1802,
+    "instancedRenderers": 634,
+    "batches": 40,
+    "culled": 2221,
+    "occluded": 371,
+    "lights": 6,
+    "totalLights": 57,
+    "proxyBatches": 0,
+    "renderScale": 0.75,
+    "allocated": 420468731,
+    "reserved": 439542492
+  },
+  "display": {
+    "cssWidth": 900,
+    "cssHeight": 340,
+    "renderWidth": 1350,
+    "renderHeight": 510,
+    "density": 1.5,
+    "quality": "auto",
+    "unityWidth": 1350,
+    "unityHeight": 510,
+    "uiScale": 0.9749999642372131,
+    "smallTextCssPixels": 11.699999570846558
+  },
+  "variant": "mobile",
+  "touch": true,
+  "overflow": false,
+  "errors": []
+}

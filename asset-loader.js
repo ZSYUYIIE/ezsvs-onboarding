@@ -5,6 +5,15 @@ window.EZSVSAssets=(()=>{
  const pending=new Map(),states=new Map(),waiting=[];let slots=0;
  const cachePromise=(async()=>{try{return await caches.open('ezsvs-verified-assets-v1');}catch(e){stats.cacheUnavailable=true;return null;}})();
  const pause=ms=>new Promise(r=>setTimeout(r,ms));
+ function selectBuild(variants,fallback){
+  if(!variants)return fallback;
+  // Select from actual GPU support, not the user-agent. Keep the existing ETC2
+  // path as the fallback for devices without desktop S3TC texture support.
+  const probe=document.createElement('canvas'),gl=probe.getContext('webgl2');
+  const desktop=!!gl?.getExtension('WEBGL_compressed_texture_s3tc');
+  gl?.getExtension('WEBGL_lose_context')?.loseContext();
+  return variants[desktop?'desktop':'mobile']||fallback;
+ }
  async function limited(work){if(slots>=3)await new Promise(r=>waiting.push(r));else slots++;stats.active++;stats.maxActive=Math.max(stats.maxActive,stats.active);try{return await work();}finally{stats.active--;if(waiting.length)waiting.shift()();else slots--;}}
  async function valid(bytes,part){if(bytes.byteLength!==part.bytes)return false;if(!crypto.subtle)throw Error('HTTPS is required to verify game resources');const hash=await crypto.subtle.digest('SHA-256',bytes);return Array.from(new Uint8Array(hash),b=>b.toString(16).padStart(2,'0')).join('')===part.sha256;}
  async function partBytes(part){
@@ -28,5 +37,5 @@ window.EZSVSAssets=(()=>{
  function release(name){const s=states.get(name);if(s?.url){URL.revokeObjectURL(s.url);s.url='';}if(!stats.loadedBundles.includes(name))stats.loadedBundles.push(name);}
  function unload(name){const s=states.get(name);if(s?.url)URL.revokeObjectURL(s.url);states.delete(name);const i=stats.loadedBundles.indexOf(name);if(i>=0)stats.loadedBundles.splice(i,1);(stats.unloadedBundles??=[]).push(name);if(stats.unloadedBundles.length>64)stats.unloadedBundles.shift();}
  function reset(){for(const [name,s] of states)if(s.status<0){if(s.url)URL.revokeObjectURL(s.url);states.delete(name);}}
- return {file,request,unload,status:name=>states.get(name)?.status??0,url:name=>states.get(name)?.url||'',progress:name=>states.get(name)?.progress||0,release,reset,stats};
+ return {file,request,unload,selectBuild,status:name=>states.get(name)?.status??0,url:name=>states.get(name)?.url||'',progress:name=>states.get(name)?.progress||0,release,reset,stats};
 })();

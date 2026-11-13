@@ -1,0 +1,10 @@
+# Keep the tested compiled payload byte-for-byte identical on every platform.
+/Build/** -text
+/StreamingAssets/** -text
+/mobile/** -text
+/index.html -text
+/asset-loader.js -text
+/web.js -text
+/web.css -text
+/locale.js -text
+/package-manifest.json -text

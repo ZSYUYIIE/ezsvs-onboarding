@@ -1,0 +1,451 @@
+{
+    "passed": true,
+    "scope": "Editor import, compilation, entry scene, fonts and all streamed character rigs/materials; not a new physical-device playtest.",
+    "checks": [
+        {
+            "name": "unity-version",
+            "passed": true,
+            "details": "6000.3.22f1"
+        },
+        {
+            "name": "entry-in-build-settings",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "entry-scene-opens",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "chinese-font",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "course-data",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "english-data",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "no-private-keystore",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "sixteen-streamed-characters",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:aiman",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/aiman.prefab"
+        },
+        {
+            "name": "humanoid:aiman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:aiman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:aiman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:aiman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:chen",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/chen.prefab"
+        },
+        {
+            "name": "humanoid:chen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:chen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:chen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:chen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:faiz",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/faiz.prefab"
+        },
+        {
+            "name": "humanoid:faiz",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:faiz",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:faiz",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:faiz",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:hua",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/hua.prefab"
+        },
+        {
+            "name": "humanoid:hua",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:hua",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:hua",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:hua",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:hunterlin",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/hunterlin.prefab"
+        },
+        {
+            "name": "humanoid:hunterlin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:hunterlin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:hunterlin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:hunterlin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:jay",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/jay.prefab"
+        },
+        {
+            "name": "humanoid:jay",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:jay",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:jay",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:jay",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:jojo",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/jojo.prefab"
+        },
+        {
+            "name": "humanoid:jojo",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:jojo",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:jojo",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:jojo",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:lei",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/lei.prefab"
+        },
+        {
+            "name": "humanoid:lei",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:lei",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:lei",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:lei",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:liyi",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/liyi.prefab"
+        },
+        {
+            "name": "humanoid:liyi",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:liyi",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:liyi",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:liyi",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:meiling",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/meiling.prefab"
+        },
+        {
+            "name": "humanoid:meiling",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:meiling",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:meiling",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:meiling",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:qin",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/qin.prefab"
+        },
+        {
+            "name": "humanoid:qin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:qin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:qin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:qin",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:teacherchen",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/teacherchen.prefab"
+        },
+        {
+            "name": "humanoid:teacherchen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:teacherchen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:teacherchen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:teacherchen",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:xiaoman",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/xiaoman.prefab"
+        },
+        {
+            "name": "humanoid:xiaoman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:xiaoman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:xiaoman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:xiaoman",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:yandy",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/yandy.prefab"
+        },
+        {
+            "name": "humanoid:yandy",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:yandy",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:yandy",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:yandy",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:yang",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/yang.prefab"
+        },
+        {
+            "name": "humanoid:yang",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:yang",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:yang",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:yang",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "prefab:yuanyuting",
+            "passed": true,
+            "details": "Assets/StreamedCharacters/yuanyuting.prefab"
+        },
+        {
+            "name": "humanoid:yuanyuting",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "scripts:yuanyuting",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "skin-mesh:yuanyuting",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "materials:yuanyuting",
+            "passed": true,
+            "details": ""
+        },
+        {
+            "name": "web-template",
+            "passed": true,
+            "details": ""
+        }
+    ]
+}

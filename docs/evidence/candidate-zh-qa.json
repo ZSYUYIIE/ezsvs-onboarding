@@ -1,0 +1,1021 @@
+{
+  "qa": {
+    "version": "0.4.3-web.1",
+    "checks": [
+      {
+        "name": "crowd-escape:between-two-colleagues",
+        "passed": true,
+        "details": "distance=0.1393433"
+      },
+      {
+        "name": "crowd-keeps-collisions:between-two-colleagues",
+        "passed": true,
+        "details": "minimum centre distance=0.6109003"
+      },
+      {
+        "name": "crowd-escape:aisle-with-two-colleagues",
+        "passed": true,
+        "details": "distance=0.1417847"
+      },
+      {
+        "name": "crowd-keeps-collisions:aisle-with-two-colleagues",
+        "passed": true,
+        "details": "minimum centre distance=0.612084"
+      },
+      {
+        "name": "crowd-racks-remain-solid",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "crowd-escape:click-route-between-colleagues",
+        "passed": true,
+        "details": "distance=0.1469788"
+      },
+      {
+        "name": "crowd-keeps-collisions:click-route-between-colleagues",
+        "passed": true,
+        "details": "minimum centre distance=0.6226685"
+      },
+      {
+        "name": "crowd-escape:retreat-from-colleagues",
+        "passed": true,
+        "details": "distance=0.1141363"
+      },
+      {
+        "name": "crowd-keeps-collisions:retreat-from-colleagues",
+        "passed": true,
+        "details": "minimum centre distance=0.6575421"
+      },
+      {
+        "name": "streaming-later-floor-not-in-startup",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "streaming-unused-model-excluded",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "twenty-rules-verbatim-shape",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "every-rule-taught",
+        "passed": true,
+        "details": "missing "
+      },
+      {
+        "name": "every-rule-can-be-failed",
+        "passed": true,
+        "details": "missing "
+      },
+      {
+        "name": "one-right-answer-each",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-answer-not-always-first",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "speakers-are-cast",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "actor-models-load",
+        "passed": true,
+        "details": "yuanyuting,qin,hua,chen,yandy,yang,jay,teacherchen"
+      },
+      {
+        "name": "humanoid:aiman",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:jay",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:faiz",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:xiaoman",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:jojo",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:meiling",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:teacherchen",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:lei",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:hunterlin",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:liyi",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:yandy",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:yuanyuting",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:qin",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:hua",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:chen",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "humanoid:yang",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "only-current-room-retained",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:arrive.meet",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "guide-walks-and-opens-registration",
+        "passed": true,
+        "details": "at=(-24.77, 0.00, -13.89) destination=(-24.77, 0.00, -13.89) next=(-24.77, 0.00, -13.89) pending= modal=True capture=False speed=0 paths=0 trial=(-24.77, 0.00, -13.89)"
+      },
+      {
+        "name": "guide-keeps-human-clearance",
+        "passed": true,
+        "details": "closest centres=0.903"
+      },
+      {
+        "name": "asks:right:access.register",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:access.register",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:right:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:right:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:right:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:right:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.brief",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.mantrap",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:patrol.hazards:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:right:patrol.hazards:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:right:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:right:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:right:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:right:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sequence-opens:right:emergency.respond",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sequence-done:right:emergency.respond",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:right:graduate.review",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "results-open:right:graduate.results",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "perfect-run-finished",
+        "passed": true,
+        "details": "passed=20 mistakes=0"
+      },
+      {
+        "name": "finished-save-stored",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "save-roundtrip",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "save-backup-recovery",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:arrive.meet",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:access.register",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:access.register",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.register:袁工在旁边，有人",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.register:先进去干活，审批",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:access.register",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:wrong:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-wrong-blocks:wrong:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:wrong:access.locker",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:wrong:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-wrong-blocks:wrong:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:wrong:access.outfit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.tailgate:把卡借你刷一下，",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.tailgate:就拿个工具，跟紧",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:access.tailgate",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.borrow:同事嘛，没关系，",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:access.borrow:我先刷进去，门开",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:access.borrow",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.brief",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.mantrap",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:cage",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "resume-mid-hunt",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "cage-intrusion-caught",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "running-warned",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:filmer",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:runner",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:toucher",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:exit",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:mess",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:patrol.hazards:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-asks:wrong:patrol.hazards:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "hazard-wrong-blocks:cart",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.reboot:好，按五秒就行。",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.reboot:你来按，我在旁边",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.reboot",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.unplug:看着确实没亮灯，",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.unplug:拔之前拍个照留底",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.unplug",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.ups:就消个音，不影响",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.ups:把告警复位一下，",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.ups",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.usb:先杀一下毒，没毒",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.usb:插到我的笔记本上",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.usb",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.move:就挪几个 U，问",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.move:你来搬，我帮你托",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.move",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "asks:wrong:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.floor:掀地板没事，钻孔",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-blocks:wrong:change.floor:我帮你扶着地板，",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "right-card:wrong:change.floor",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-opens:wrong:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-wrong-blocks:wrong:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sheet-right:wrong:change.readback",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sequence-opens:wrong:emergency.respond",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:掀开地板找漏水点",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:先把附近的服务器关机，免得进水",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:去复位精密空调的告警",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:拍张照片发到工作群",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:水不多，擦干就行，不用上报",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "distractor-costs:自己去关冷冻水阀门",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "order-matters",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "sequence-done:wrong:emergency.respond",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "walkable:wrong:graduate.review",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "results-open:wrong:graduate.results",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-first-run-finished",
+        "passed": true,
+        "details": ""
+      },
+      {
+        "name": "wrong-answers-recorded",
+        "passed": true,
+        "details": "not marked "
+      },
+      {
+        "name": "mistake-log-for-review",
+        "passed": true,
+        "details": "log=56 mistakes=56"
+      }
+    ],
+    "passed": true,
+    "scope": "Unity 实际运行中的入职流程、二十条红线覆盖、错误选项、存档与步行可达性检查；不等于人工试玩或真机认证。"
+  },
+  "build": "desktop",
+  "errors": []
+}

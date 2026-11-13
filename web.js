@@ -1,5 +1,6 @@
 'use strict';
-const $=id=>document.getElementById(id),build=window.EZSVS_BUILD,query=new URLSearchParams(location.search);
+const $=id=>document.getElementById(id),query=new URLSearchParams(location.search);
+const build=window.EZSVS_BUILD=EZSVSAssets.selectBuild(window.EZSVS_BUILDS,window.EZSVS_BUILD);
 const mobile=/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
 window.ezsvsSettings={touch:mobile||query.get('touch')==='1',lowPower:mobile,qa:query.get('qa')==='1'&&['localhost','127.0.0.1'].includes(location.hostname),review:query.get('review')==='1'&&['localhost','127.0.0.1'].includes(location.hostname),name:'',language:webLanguage};
 window.ezsvsErrors=[];window.addEventListener('error',e=>window.ezsvsErrors.push(e.message));window.addEventListener('unhandledrejection',e=>window.ezsvsErrors.push(String(e.reason)));
@@ -53,7 +54,7 @@ async function start(){if(starting)return;starting=true;$('launch').disabled=tru
   progress(.02,tr('准备图形引擎…'));const data=await dataURL();
   await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=build.loader;s.onload=resolve;s.onerror=()=>reject(Error(tr('引擎加载失败，请检查网络后重试')));document.body.appendChild(s);});
   updateDisplay();
-  instance=await createUnityInstance(canvas,{dataUrl:data,frameworkUrl:build.framework,codeUrl:build.code,streamingAssetsUrl:'StreamingAssets',companyName:build.company,productName:build.product,productVersion:build.version,devicePixelRatio:window.ezsvsDisplay.density,matchWebGLToCanvasSize:true,cacheControl:url=>url.startsWith('blob:')?'no-store':'must-revalidate',showBanner:(m,t)=>{if(t==='error'){ezsvsErrors.push(m);console.error(m);toast(tr('运行异常，请从网页菜单保存进度后重新加载。'));}}},p=>progress(build.parts ? .72+.28*p : p,tr('正在展开场景与人物… ')+Math.round(p*100)+'%'));
+  instance=await createUnityInstance(canvas,{dataUrl:data,frameworkUrl:build.framework,codeUrl:build.code,streamingAssetsUrl:build.streamingAssets||'StreamingAssets',companyName:build.company,productName:build.product,productVersion:build.version,devicePixelRatio:window.ezsvsDisplay.density,matchWebGLToCanvasSize:true,cacheControl:url=>url.startsWith('blob:')?'no-store':'must-revalidate',showBanner:(m,t)=>{if(t==='error'){ezsvsErrors.push(m);console.error(m);toast(tr('运行异常，请从网页菜单保存进度后重新加载。'));}}},p=>progress(build.parts ? .72+.28*p : p,tr('正在展开场景与人物… ')+Math.round(p*100)+'%'));
   window.ezsvsInstance=instance;displayObserver=new ResizeObserver(()=>updateDisplay());displayObserver.observe(canvas);window.addEventListener('resize',updateDisplay);document.addEventListener('fullscreenchange',updateDisplay);updateDisplay();$('welcome').hidden=true;$('toolbar').hidden=false;canvas.focus();if(data.startsWith('blob:'))URL.revokeObjectURL(data);
  }catch(e){const reason=typeof e?.message==='string'&&e.message!=='undefined'?e.message:tr('浏览器未能启动三维引擎。请更新 Chrome，选择均衡画质并关闭其他大应用后重试。');$('error').textContent=tr('无法进入：')+reason+tr('\n可刷新重试；尚未开始的培训不会计入成绩。');$('error').hidden=false;$('launch').disabled=false;$('launch').textContent=tr('重试加载');starting=false;$('name').disabled=false;$('quality').disabled=false;$('language').disabled=false;}
 }

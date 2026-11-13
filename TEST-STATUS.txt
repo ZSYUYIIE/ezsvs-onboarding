@@ -1,3 +1,5 @@
-EZSVS 0.4.2-web.1
-PASS 207 in-player regression checks; phone-style touch/UI/quality changes; six floor transitions/revisits with one room retained and cached reloading; six asset-loader checks; 82 resource URLs and 74 part hashes.
-Desktop hardware-WebGL and Android-style input emulation only; physical Honor device and China network not verified. Original releases retained. No deployment performed.
+v0.4.3-web.1 — tested 2026-11-13
+89 handoff checks; 15 navigation/camera regressions; 17 JS tests; 6 packager tests passed.
+English course 207; Chinese course 202; ETC2 Android touch emulation English course 207 passed.
+DXT and ETC2 builds validated. Retry recovery, room lifetime, runtime quality, narrow landscape and touch movement checked.
+No physical-phone FPS certification. Known Unity diagnostics and a failed/retried build are documented in docs/performance-audit-2026-11-13.md.

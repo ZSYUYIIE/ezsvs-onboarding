@@ -1,0 +1,169 @@
+{
+  "samples": [
+    {
+      "label": "candidate-cold-aisle-1",
+      "elapsedMs": 15035.699999999255,
+      "frames": 493,
+      "rafFps": 32.788629727915854,
+      "frameMs": {
+        "median": 27.80000000000291,
+        "p95": 38.900000000001455,
+        "p99": 44.5,
+        "max": 61
+      },
+      "framesOver33ms": 102,
+      "framesOver50ms": 1,
+      "unityFps": {
+        "min": 23.154113466869703,
+        "max": 37.12871287123007,
+        "median": 33.044196613020695
+      },
+      "allocatedMB": {
+        "min": 442.444981,
+        "max": 442.463413,
+        "median": 442.444981
+      },
+      "reservedMB": {
+        "min": 465.736323,
+        "max": 465.765699,
+        "median": 465.736323
+      },
+      "scene": {
+        "place": "sg1_l2",
+        "path": "spatial-mesh-combine",
+        "readable": 1480,
+        "rooms": 1,
+        "bundles": 9,
+        "width": 1280,
+        "height": 720,
+        "renderers": 1802,
+        "instancedRenderers": 634,
+        "batches": 1910,
+        "culled": 662,
+        "occluded": 60,
+        "lights": 14,
+        "totalLights": 57,
+        "proxyBatches": 29,
+        "renderScale": 1,
+        "allocated": 442444981,
+        "reserved": 465736323
+      },
+      "errors": [],
+      "longTaskCount": 0
+    },
+    {
+      "label": "candidate-cold-aisle-2",
+      "elapsedMs": 15025.399999999441,
+      "frames": 509,
+      "rafFps": 33.875970024093796,
+      "frameMs": {
+        "median": 27.80000000000291,
+        "p95": 38.90000000000873,
+        "p99": 44.40000000000873,
+        "max": 44.59999999999127
+      },
+      "framesOver33ms": 89,
+      "framesOver50ms": 0,
+      "unityFps": {
+        "min": 30.272452068636525,
+        "max": 37.59398496240601,
+        "median": 33.980582524271846
+      },
+      "allocatedMB": {
+        "min": 442.444981,
+        "max": 442.444981,
+        "median": 442.444981
+      },
+      "reservedMB": {
+        "min": 465.736323,
+        "max": 465.736323,
+        "median": 465.736323
+      },
+      "scene": {
+        "place": "sg1_l2",
+        "path": "spatial-mesh-combine",
+        "readable": 1480,
+        "rooms": 1,
+        "bundles": 9,
+        "width": 1280,
+        "height": 720,
+        "renderers": 1802,
+        "instancedRenderers": 634,
+        "batches": 1910,
+        "culled": 662,
+        "occluded": 60,
+        "lights": 14,
+        "totalLights": 57,
+        "proxyBatches": 29,
+        "renderScale": 1,
+        "allocated": 442444981,
+        "reserved": 465736323
+      },
+      "errors": [],
+      "longTaskCount": 0
+    },
+    {
+      "label": "candidate-smooth",
+      "elapsedMs": 15014.599999999627,
+      "frames": 504,
+      "rafFps": 33.56732780094125,
+      "frameMs": {
+        "median": 27.80000000000291,
+        "p95": 38.89999999999418,
+        "p99": 44.40000000002328,
+        "max": 50
+      },
+      "framesOver33ms": 101,
+      "framesOver50ms": 0,
+      "unityFps": {
+        "min": 27.972027972027973,
+        "max": 38.05496828752643,
+        "median": 33.98470688198382
+      },
+      "allocatedMB": {
+        "min": 442.667092,
+        "max": 442.667092,
+        "median": 442.667092
+      },
+      "reservedMB": {
+        "min": 465.95965,
+        "max": 465.95965,
+        "median": 465.95965
+      },
+      "scene": {
+        "place": "sg1_l2",
+        "path": "spatial-mesh-combine",
+        "readable": 1480,
+        "rooms": 1,
+        "bundles": 9,
+        "width": 1280,
+        "height": 720,
+        "renderers": 1802,
+        "instancedRenderers": 634,
+        "batches": 1910,
+        "culled": 662,
+        "occluded": 60,
+        "lights": 14,
+        "totalLights": 57,
+        "proxyBatches": 29,
+        "renderScale": 0.6000000238418579,
+        "allocated": 442667092,
+        "reserved": 465959650
+      },
+      "errors": [],
+      "longTaskCount": 0
+    }
+  ],
+  "display": {
+    "cssWidth": 1280,
+    "cssHeight": 720,
+    "renderWidth": 1280,
+    "renderHeight": 720,
+    "density": 1,
+    "quality": "balanced",
+    "unityWidth": 1280,
+    "unityHeight": 720,
+    "uiScale": 0.8999999761581421,
+    "smallTextCssPixels": 11.699999690055847
+  }
+}

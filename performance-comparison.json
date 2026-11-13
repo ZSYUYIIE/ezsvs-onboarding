@@ -1,138 +1,21 @@
 {
-  "scope": "同一电脑、硬件 WebGL 浏览器、900×340 CSS 手机视口和 DPR 2.625、自动画质；旧版与新版的分辨率及场景渲染比例不同。仅为本机浏览器观察值，不是荣耀真机帧率或 Task Manager 内存基准。",
-  "cases": [
-    {
-      "case": "lobby",
-      "label": "一层前台",
-      "beforeCalls": 1423,
-      "afterCalls": 938,
-      "callsReductionPercent": 34.08292340126493,
-      "beforeTriangles": 2197217,
-      "afterTriangles": 1565616,
-      "beforeObservedFps": 37.80047520597401,
-      "afterObservedFps": 31.92030717512991,
-      "beforeCanvas": [
-        2160,
-        816
-      ],
-      "afterCanvas": [
-        1350,
-        510
-      ],
-      "afterSceneScale": 0.75
-    },
-    {
-      "case": "cold-aisle",
-      "label": "二层冷通道",
-      "beforeCalls": 3235,
-      "afterCalls": 1158,
-      "callsReductionPercent": 64.20401854714065,
-      "beforeTriangles": 1927515,
-      "afterTriangles": 1184509,
-      "beforeObservedFps": 51.37382557583426,
-      "afterObservedFps": 58.44526346631301,
-      "beforeCanvas": [
-        2160,
-        816
-      ],
-      "afterCanvas": [
-        1350,
-        510
-      ],
-      "afterSceneScale": 0.75
-    },
-    {
-      "case": "hall-overview",
-      "label": "冷通道较高视角",
-      "beforeCalls": 3268,
-      "afterCalls": 785,
-      "callsReductionPercent": 75.97919216646267,
-      "beforeTriangles": 1786705,
-      "afterTriangles": 920575,
-      "beforeObservedFps": 56.854172138365776,
-      "afterObservedFps": 76.48891219196247,
-      "beforeCanvas": [
-        2160,
-        816
-      ],
-      "afterCanvas": [
-        1350,
-        510
-      ],
-      "afterSceneScale": 0.75
-    }
+  "date": "2026-11-13",
+  "version": "0.4.3-web.1",
+  "viewport": [
+    1280,
+    720
   ],
-  "retainedRoomCounts": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
+  "quality": "auto",
+  "sceneScale": 1,
+  "view": "Stage 2 review camera 3, cold aisle",
+  "baselineFps": [
+    22.922978791261503,
+    23.17227825324829
   ],
-  "retainedBundleCounts": [
-    7,
-    9,
-    9,
-    10,
-    9,
-    7
+  "candidateFps": [
+    32.788629727915854,
+    33.875970024093796
   ],
-  "floorTransitionMemoryObservations": [
-    {
-      "stage": 1,
-      "place": "sg1_l1",
-      "rooms": 1,
-      "actorAndSharedBundles": 7,
-      "unityAllocatedMB": 368.2,
-      "unityReservedMB": 385.7,
-      "networkDownloadBytes": 73920735
-    },
-    {
-      "stage": 2,
-      "place": "sg1_l2",
-      "rooms": 1,
-      "actorAndSharedBundles": 9,
-      "unityAllocatedMB": 428.8,
-      "unityReservedMB": 448.1,
-      "networkDownloadBytes": 58167159
-    },
-    {
-      "stage": 4,
-      "place": "sg1_l2",
-      "rooms": 1,
-      "actorAndSharedBundles": 9,
-      "unityAllocatedMB": 391.4,
-      "unityReservedMB": 412.0,
-      "networkDownloadBytes": 0
-    },
-    {
-      "stage": 5,
-      "place": "sg1_l3",
-      "rooms": 1,
-      "actorAndSharedBundles": 10,
-      "unityAllocatedMB": 447.4,
-      "unityReservedMB": 467.3,
-      "networkDownloadBytes": 55524480
-    },
-    {
-      "stage": 2,
-      "place": "sg1_l2",
-      "rooms": 1,
-      "actorAndSharedBundles": 9,
-      "unityAllocatedMB": 420.7,
-      "unityReservedMB": 441.8,
-      "networkDownloadBytes": 0
-    },
-    {
-      "stage": 1,
-      "place": "sg1_l1",
-      "rooms": 1,
-      "actorAndSharedBundles": 7,
-      "unityAllocatedMB": 378.1,
-      "unityReservedMB": 397.9,
-      "networkDownloadBytes": 0
-    }
-  ],
-  "memoryScope": "Unity Profiler allocated/reserved values, decimal MB; not browser process totals or physical phone memory"
+  "scope": "Controlled local desktop browser; not physical-phone or whole-course averages.",
+  "report": "docs/performance-audit-2026-11-13.md"
 }
