@@ -1,10 +1,16 @@
-# EZSVS · 入职第一天 / Your First Day — v0.4.3-web.1
+# EZSVS · 入职第一天 / Your First Day — v0.4.3-web.2
 
 [打开培训 / Open training](https://zsyuyiie.github.io/ezsvs-onboarding/) · [完整 Unity 源码与网页 ZIP / Full source and web ZIP](https://github.com/ZSYUYIIE/ezsvs-onboarding/releases/tag/v0.4.3-web.1) · [测试报告 / Audit](docs/performance-audit-2026-11-13.md)
 
 电脑、安卓手机和平板浏览器的三维入职培训。保留二十条运维红线、中英文、培训进度、证书、按楼层加载与浏览器缓存。
 
-## 本次更新 / This update
+## 2026-11-18 大堂闸机修复 / Lobby gate hotfix
+
+当前网页版本为 **0.4.3-web.2**。第一关闸机机身恢复实体碰撞，通道加宽，玻璃挡板处于打开状态。三条通道均可双向通行。30 项专项检查、桌面及移动构建的完整课程检查通过。详见 [修复记录](docs/lobby-gate-hotfix-2026-11-18.md)。
+
+[Unity 源码补丁](Unity-hotfix-v0.4.3-web.2.zip) 覆盖到下方 v0.4.3-web.1 完整源码根目录即可复现此版本。
+
+## v0.4.3-web.1 更新 / Previous update
 
 - 优化场景导航、相机碰撞与人物异步加载；桌面 WebGL 使用空间网格单元，减少逐帧手动绘制开销。
 - 按 GPU 支持选择完整的桌面 DXT 或移动 ETC2 包。`Build/`、`StreamingAssets/`、`mobile/` 和网页脚本必须保持同版；不要只更新首页。

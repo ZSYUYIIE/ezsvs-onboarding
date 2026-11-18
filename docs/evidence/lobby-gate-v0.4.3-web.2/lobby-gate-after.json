@@ -1,0 +1,155 @@
+{
+    "passed": true,
+    "checks": [
+        {
+            "name": "three-lobby-gates",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-0--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-0--1",
+            "details": "(-24.361, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-0--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-0-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-0-1",
+            "details": "(-23.239, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-0-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-navigation-0",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-forward-0",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-return-0",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-1--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-1--1",
+            "details": "(-22.961, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-1--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-1-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-1-1",
+            "details": "(-21.839, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-1-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-navigation-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-forward-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-return-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-2--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-2--1",
+            "details": "(-21.561, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-2--1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-navigation-2-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "cabinet-body-2-1",
+            "details": "(-20.439, 0.000, -13.015)",
+            "passed": true
+        },
+        {
+            "name": "cabinet-camera-2-1",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-navigation-2",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-forward-2",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "lane-return-2",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "fixed-barrier--27",
+            "details": "",
+            "passed": true
+        },
+        {
+            "name": "fixed-barrier--19",
+            "details": "",
+            "passed": true
+        }
+    ]
+}

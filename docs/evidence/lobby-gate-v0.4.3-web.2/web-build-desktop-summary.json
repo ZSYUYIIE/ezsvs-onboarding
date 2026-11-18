@@ -1,0 +1,10 @@
+{
+    "result": "Succeeded",
+    "variant": "desktop",
+    "textureFormat": "DXT",
+    "artifactsValid": true,
+    "bytes": 43210260,
+    "seconds": 230.32789459999999,
+    "errors": 3,
+    "warnings": 2
+}
