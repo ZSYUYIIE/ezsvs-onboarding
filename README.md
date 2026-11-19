@@ -1,14 +1,16 @@
-# EZSVS · 入职第一天 / Your First Day — v0.4.3-web.2
+# EZSVS · 入职第一天 / Your First Day — v0.4.3-web.3
 
 [打开培训 / Open training](https://zsyuyiie.github.io/ezsvs-onboarding/) · [完整 Unity 源码与网页 ZIP / Full source and web ZIP](https://github.com/ZSYUYIIE/ezsvs-onboarding/releases/tag/v0.4.3-web.1) · [测试报告 / Audit](docs/performance-audit-2026-11-13.md)
 
 电脑、安卓手机和平板浏览器的三维入职培训。保留二十条运维红线、中英文、培训进度、证书、按楼层加载与浏览器缓存。
 
-## 2026-11-18 大堂闸机修复 / Lobby gate hotfix
+## 2026-11-19 大堂闸机默认关闭 / Closed lobby gates
 
-当前网页版本为 **0.4.3-web.2**。第一关闸机机身恢复实体碰撞，通道加宽，玻璃挡板处于打开状态。三条通道均可双向通行。30 项专项检查、桌面及移动构建的完整课程检查通过。详见 [修复记录](docs/lobby-gate-hotfix-2026-11-18.md)。
+当前网页版本为 **0.4.3-web.3**。大堂三条闸机的玻璃挡板默认关闭，机身与挡板均有实体碰撞。完成第一关答题及后续对话后自动切换到第二关。详见 [本次记录](docs/lobby-gate-closed-2026-11-19.md)。
 
-[Unity 源码补丁](Unity-hotfix-v0.4.3-web.2.zip) 覆盖到下方 v0.4.3-web.1 完整源码根目录即可复现此版本。
+30 项专项回归、桌面中文课程 202 项和移动英文课程 207 项通过，普通键盘操作已验证关闭挡板阻挡和答题后的场景切换。
+
+[Unity 源码补丁](Unity-hotfix-v0.4.3-web.3.zip) 覆盖到下方 v0.4.3-web.1 完整源码根目录即可复现此版本。
 
 ## v0.4.3-web.1 更新 / Previous update
 

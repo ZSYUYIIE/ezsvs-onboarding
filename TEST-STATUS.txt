@@ -1,1 +1,1 @@
-v0.4.3-web.2, 2026-11-18. Lobby gate regression 30/30. Desktop and mobile course tests passed. JavaScript tooling 17/17, packaging 6/6. DXT and ETC2 builds verified. See docs/lobby-gate-hotfix-2026-11-18.md for evidence and phone-testing limits.
+v0.4.3-web.3, 2026-11-19. Closed gate regression 30/30. Desktop Chinese course 202/202, mobile English course 207/207. Keyboard collision and answer-driven Stage 2 transition verified. DXT and ETC2 builds verified. Mobile tests used Chrome touch emulation.

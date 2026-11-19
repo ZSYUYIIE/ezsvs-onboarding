@@ -1,4 +1,4 @@
-EZSVS Your First Day v0.4.3-web.2
+EZSVS Your First Day v0.4.3-web.3
 
 Open https://zsyuyiie.github.io/ezsvs-onboarding/ and choose English. Use WASD/click to move, right-drag to look, E to interact, G for the objective and H for the handbook. Touch users should use landscape orientation, the left movement stick, and right-side look area.
 
