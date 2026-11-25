@@ -1868,8 +1868,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 621,
-      "sha256": "a2c9a7bc51598d07b927e75ea05d2f63cc9590e3a88861689664053d289dbac4"
+      "bytes": 689,
+      "sha256": "d9a61ecc52557e5b44d6da53e7fd554f93c2b0425f8e9e92fa1df2e936d673ac"
     },
     {
       "path": ".gitignore",
