@@ -1,5 +1,8 @@
 'use strict';
 const webEnglish={
+ '培训已就绪':'Training is ready',
+ '正在准备培训场景… ':'Preparing the training area… ',
+ '正在准备开场人物与场景…':'Preparing the opening scene and characters…',
  '背景音乐：《Team Work (Loop)》，Corporate Music Zone，CC BY 4.0 授权。':'Music: "Team Work (Loop)" by Corporate Music Zone, licensed under CC BY 4.0.',
  '浏览器未能启动三维引擎。请更新 Chrome，选择均衡画质并关闭其他大应用后重试。':'The 3D engine could not start. Update Chrome, choose Balanced graphics and close other large apps before retrying.',
  'EZSVS · 入职第一天':'EZSVS · Your First Day',
