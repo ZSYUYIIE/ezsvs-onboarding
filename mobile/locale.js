@@ -1,5 +1,6 @@
 'use strict';
 const webEnglish={
+ '背景音乐：《Team Work (Loop)》，Corporate Music Zone，CC BY 4.0 授权。':'Music: "Team Work (Loop)" by Corporate Music Zone, licensed under CC BY 4.0.',
  '浏览器未能启动三维引擎。请更新 Chrome，选择均衡画质并关闭其他大应用后重试。':'The 3D engine could not start. Update Chrome, choose Balanced graphics and close other large apps before retrying.',
  'EZSVS · 入职第一天':'EZSVS · Your First Day',
  '入职第一天三维培训场景':'Your First Day: 3D safety training',
