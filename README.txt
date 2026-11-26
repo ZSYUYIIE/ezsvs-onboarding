@@ -1,1 +1,1 @@
-EZSVS onboarding v0.4.3-web.3. Lobby gates stay closed and solid. Completing the questions advances the course. See README.md.
+Upload the complete contents, including mobile/, to the existing Pages repository. GPU support selects the desktop DXT or mobile ETC2 variant. Preserve the original domain/path to retain browser progress. No publishing was performed.
